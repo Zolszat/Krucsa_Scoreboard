@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krucsa Scoreboard", "Krucsa Scoreboard\Krucsa Scoreboard.csproj", "{6F3C80E8-450F-427C-A2FA-05776B0FC069}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F3C80E8-450F-427C-A2FA-05776B0FC069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F3C80E8-450F-427C-A2FA-05776B0FC069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F3C80E8-450F-427C-A2FA-05776B0FC069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F3C80E8-450F-427C-A2FA-05776B0FC069}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDD00259-7430-4945-98E4-9E0BC52172A9}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,49 @@
+﻿<Window x:Class="Krucsa_Scoreboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Krucsa_Scoreboard"
+        mc:Ignorable="d"
+        Title="Krucsa Pontozótábla by Szatmári Zoltán" Height="450" Width="800" WindowState="Maximized">
+    <Grid x:Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.6*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1.7*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="teamname_1" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontSize="50" Background="Bisque" FontWeight="Heavy"/>
+        <TextBox x:Name="teamname_2" Grid.Column="4" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontSize="50" Background="Goldenrod" FontWeight="Heavy"/>
+        <ListBox x:Name="team1_lb" Grid.Row="1" Grid.ColumnSpan="4"/>
+        <ListBox x:Name="team2_lb" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="4"/>
+        <Button x:Name="husz_1_1" Content="+20" Grid.Row="2" FontSize="30" Click="husz_1_1_Click" Margin="5"/>
+        <Button x:Name="husz_1_2" Content="+20" Grid.Row="3" FontSize="30" Click="husz_1_2_Click" Margin="5"/>
+        <Button x:Name="husz_1_3" Content="+20" Grid.Row="3" Grid.Column="1" FontSize="30" Click="husz_1_3_Click" Margin="5"/>
+        <Button x:Name="negyven_1" Content="+40" Grid.Row="2" Grid.Column="1" FontSize="30" Click="negyven_1_Click" Margin="5"/>
+        <Button x:Name="husz_2_1" Content="+20" Grid.Row="2" Grid.Column="4" FontSize="30" Click="husz_2_1_Click" Margin="5"/>
+        <Button x:Name="husz_2_2" Content="+20" Grid.Row="3" Grid.Column="4" FontSize="30" Click="husz_2_2_Click" Margin="5"/>
+        <Button x:Name="husz_2_3" Content="+20" Grid.Row="3" Grid.Column="5" FontSize="30" Click="husz_2_3_Click" Margin="5"/>
+        <Button x:Name="negyven_2" Content="+40" Grid.Row="2" Grid.Column="5" FontSize="30" Click="negyven_2_Click" Margin="5"/>
+        <Button x:Name="kiszamol" Content="PONTOK RÖGZÍTÉSE" Grid.Row="4" Grid.ColumnSpan="8" FontSize="30" Margin="5" Click="kiszamol_Click"/>
+        <Label Content="Licit" FontWeight="Heavy" FontSize="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="2" Grid.Column="2"/>
+        <Label Content="Licit" FontWeight="Heavy" FontSize="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="2" Grid.Column="6"/>
+        <Label Content="Elért pont" FontWeight="Heavy" FontSize="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="3" Grid.Column="2"/>
+        <Label Content="Elért pont" FontWeight="Heavy" FontSize="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="3" Grid.Column="6"/>
+        <TextBox x:Name="licit_1" Grid.Row="2" Grid.Column="3" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5"/>
+        <TextBox x:Name="licit_2" Grid.Row="2" Grid.Column="7" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5"/>
+        <TextBox x:Name="pont_1" Grid.Row="3" Grid.Column="3" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5"/>
+        <TextBox x:Name="pont_2" Grid.Row="3" Grid.Column="7" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5"/>
+    </Grid>
+</Window>
